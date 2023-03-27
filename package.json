@@ -1,4 +1,5 @@
 {
+  "homepage": "http://alexiscenriquez.github.io/tic-tac-toe",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -6,12 +7,15 @@
   },
   "main": "/index.js",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "react-scripts": "1.0.0"
   },
   "name": "bpntct",
   "description": null,
   "version": "0.0.0",
   "scripts": {
+    "predeploy" : "npm run build",
+"deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
